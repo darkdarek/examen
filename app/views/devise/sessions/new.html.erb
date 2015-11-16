@@ -1,0 +1,26 @@
+<h2>Iniciar Sesion</h2>
+
+
+<form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="ojxQ92SpgSdgazEdg7u0+yqYHEc2E0MyWncOwYYeHx4HHYtFFT2NqPoSfozYLpfVChXteTs/wXhV7BbdBaDxiA==" type="hidden">
+  <div class="field">
+    <label for="user_email">Correo</label><br>
+    <input autofocus="autofocus" value="" name="user[email]" id="user_email" type="email">
+  </div>
+
+  <div class="field">
+    <label for="user_password">Contraseña</label><br>
+    <input autocomplete="off" name="user[Contraseña]" id="user_password" type="password">
+  </div>
+
+    <div class="field">
+      <input name="user[remember_me]" value="0" type="hidden"><input value="1" name="user[remember_me]" id="user_remember_me" type="checkbox">
+      <label for="user_remember_me">Recordar Usuario</label>
+    </div>
+
+  <div class="actions">
+    <input name="commit" value="Iniciar" type="submit">
+  </div>
+</form>
+
+
+<%= render "devise/shared/links" %>
